@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script type="text/javascript">
+var fiboarr = [1,2];
+var sum = 0
+//Build an array for the Fibonacci sequence up to 4 mio.
+while (fiboarr[fiboarr.length - 1] + fiboarr[fiboarr.length - 2]< 4000000){
+  fiboarr.push(fiboarr[fiboarr.length - 1] + fiboarr[fiboarr.length-2]);
+  }
+//Loop through this array, check for even numbers and sum them up
+for (i=0; i<= fiboarr.length - 1; i++){
+  if (fiboarr[i]%2 === 0){
+    sum += fiboarr[i];
+    }
+  }
+//console.log("next: " + next);
+console.log("fiboarr: " + fiboarr);
+console.log("Sum: " + sum);
+        </script>
+    </body>
+</html>
